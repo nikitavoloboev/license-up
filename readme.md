@@ -9,7 +9,7 @@
 	</a>
 </div>
 
-<h1 align="center"> Description 📕</h1>
+<h1 align="center"> Description</h1>
 
 Create a LICENSE file quickly. Currently only MIT license is supported.
 
@@ -28,7 +28,7 @@ to install the command on your system.
 Use it in the directory where you want to create the `LICESE` file. The first two arguments to the command are the full name that you want to be attached to the License file.
 
 
-Running this : 
+Running this :
 
 ```Bash
 license-up Nikita Voloboev
