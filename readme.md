@@ -18,7 +18,7 @@ Create a LICENSE file quickly. Currently only MIT license is supported.
 If you have [Go](https://golang.org/dl/) installed, simply run 
 
 ```Bash
-go get github.com/nikitavoloboev/md-to-alfred
+go get github.com/nikitavoloboev/license-up
 ```
 
 to install the command on your system.
