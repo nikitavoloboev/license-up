@@ -1,2 +1,8 @@
+language: go
+go: 1.8
+install:
+  - go get ./...
+script:
+  - go test ./...
 after_success:
   - test -n "$TRAVIS_TAG" && gem install fpm && curl -sL http://git.io/goreleaser | bash
