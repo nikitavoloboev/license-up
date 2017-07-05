@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func create(name string, license string) error {
+func create(name string, site string) error {
 	fo, err := os.Create("LICENSE")
 	if err != nil {
 		log.Fatal(err)
@@ -16,7 +16,7 @@ func create(name string, license string) error {
 	defer fo.Close()
 
 	MIT := "MIT License \n\n" +
-		"Copyright (c) 2017 " + name + "\n\n" +
+		"Copyright (c) 2017 " + name + ", " + site + "\n\n" +
 		"Permission is hereby granted, free of charge, to any person obtaining a copy \n" +
 		"of this software and associated documentation files (the \"Software\"), to deal \n" +
 		"in the Software without restriction, including without limitation the rights \n" +
@@ -44,8 +44,8 @@ func main() {
 	app.Action = func(c *cli.Context) error {
 		name := c.Args().Get(0)
 		name += " " + c.Args().Get(1)
-		license := c.Args().Get(2)
-		create(name, license)
+		site := c.Args().Get(2)
+		create(name, site)
 		return nil
 	}
 
