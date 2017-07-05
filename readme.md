@@ -25,13 +25,13 @@ to install the command on your system.
 
 <h1 align="center"> Use 🚀 </h1>
 
-Use it in the directory where you want to create the `LICESE` file. The first two arguments to the command are the full name that you want to be attached to the License file.
+Use it in the directory where you want to create the `LICESE` file. The first two arguments to the command are the full name that you want to be attached to the License file and third is the website or email that you wish was attached.
 
 
 Running this :
 
 ```Bash
-license-up Nikita Voloboev
+license-up Nikita Voloboev nikitavoloboev.xyz
 ```
 
 Will create a file LICENSE with following content : 
@@ -39,7 +39,7 @@ Will create a file LICENSE with following content :
 ```Markdown
 MIT License
 
-Copyright (c) 2017 Nikita Voloboev
+Copyright (c) 2017 Nikita Voloboev, nikitavoloboev.xyz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -63,7 +63,7 @@ SOFTWARE.
 If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html) to simplify this. For example I have this alias that I use : 
 
 ```Bash
-alias mit='license-up Nikita Voloboev'
+alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 ```
 
 
