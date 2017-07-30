@@ -18,9 +18,10 @@
 
 Create a LICENSE file quickly. Currently only MIT license is supported.
 
-<h1 align="center"> Install 🍀 </h1>
 
-If you have [Go](https://golang.org/dl/) installed, simply run 
+<h1 align="center"> Install 💎</h1>
+
+If you have [Go](https://golang.org/dl/) installed, simply run
 
 ```Bash
 go get github.com/nikitavoloboev/license-up
@@ -39,7 +40,7 @@ Running this :
 license-up Nikita Voloboev nikitavoloboev.xyz
 ```
 
-Will create a file LICENSE with following content : 
+Will create a file LICENSE with following content :
 
 ```Markdown
 MIT License
@@ -65,7 +66,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html) to simplify this. For example I have this alias that I use : 
+If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html) to simplify this. For example I have this alias that I use :
 
 ```Bash
 alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
@@ -74,4 +75,4 @@ alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 
 <h1 align="center"> Thanks 🍀</h1>
 
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-191.2,-905.2,2) I shared. Thank you. 💛 
+You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-191.2,-905.2,2) I shared. Thank you. 💛
