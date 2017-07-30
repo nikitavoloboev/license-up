@@ -14,7 +14,7 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/nikitavoloboev/img/master/github/license%20up.gif?token=AGGH4ApCP9UK5zSrXq5WTG51QydG_iZvks5ZZrGawA%3D%3D" alt="img" width="600"></p>
 
-<h1 align="center"> Description</h1>
+<h1 align="center"> Description 📕</h1>
 
 Create a LICENSE file quickly. Currently only MIT license is supported.
 
