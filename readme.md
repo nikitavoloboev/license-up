@@ -1,9 +1,6 @@
 <h1 align="center"> License Up 📜</h1>
 
 <div align="center">
-	<a href="https://travis-ci.org/nikitavoloboev/license-up">
-		<img src="https://img.shields.io/travis/nikitavoloboev/license-up/master.svg?style=flat-square">
-	</a>
 <a href="https://www.patreon.com/nikitavoloboev">
 		<img src="https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg">
 	</a>
