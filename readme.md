@@ -71,7 +71,7 @@ alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 
 <h1 align="center"> Contribute 💛</h1>
 
-Take a look at the [issues](https://github.com/nikitavoloboev/boxes/issues) and see if you find anything interesting you want to help with. Or [create your own](https://github.com/nikitavoloboev/boxes/issues/new) if wish something was added or you think is wrong.
+Take a look at the [issues](https://github.com/nikitavoloboev/license-up/issues) and see if you find anything interesting you want to help with. Or [create your own](https://github.com/nikitavoloboev/license-up/issues/new) if wish something was added or you think is wrong.
 
 
 <h1 align="center"> Thanks 🍀</h1>
