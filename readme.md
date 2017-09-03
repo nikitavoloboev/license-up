@@ -28,7 +28,7 @@ to install the command on your system.
 
 <h1 align="center"> Use 🚀 </h1>
 
-Use it in the directory where you want to create the `LICESE` file. The first two arguments to the command are the full name that you want to be attached to the License file and third is the website or email that you wish was attached.
+Use it in the directory where you want to create the `LICENSE` file. The first two arguments to the command are the full name that you want to be attached to the License file and third is the website or email that you wish was attached.
 
 
 Running this :
@@ -68,6 +68,10 @@ If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html
 ```Bash
 alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 ```
+
+<h1 align="center"> Contributing 💚</h1>
+
+Take a look at the [issues](https://github.com/nikitavoloboev/boxes/issues) and see if you find anything interesting you want to help with. Or [create your own](https://github.com/nikitavoloboev/boxes/issues/new) if wish something was added or you think is wrong.
 
 
 <h1 align="center"> Thanks 🍀</h1>
