@@ -1,23 +1,11 @@
-<h1 align="center"> License Up 📜</h1>
-
-<div align="center">
-<a href="https://www.patreon.com/nikitavoloboev">
-		<img src="https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg">
-	</a>
-	<a href="https://github.com/nikitavoloboev/license-up/blob/master/LICENSE">
-		<img src="https://img.shields.io/pypi/l/pipenv.svg">
-	</a>
-</div>
+# License Up 📜 [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
 
 [![asciicast](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR.png)](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR)
 
-<h1 align="center"> Description 📕</h1>
-
+## Description 📕
 Create a LICENSE file quickly. Currently only MIT license is supported.
 
-
-<h1 align="center"> Install 💎</h1>
-
+## Install 💎
 If you have [Go](https://golang.org/dl/) installed, simply run
 
 ```Bash
@@ -26,10 +14,8 @@ go get github.com/nikitavoloboev/license-up
 
 to install the command on your system.
 
-<h1 align="center"> Use 🚀 </h1>
-
+## Usage 🚀
 Use it in the directory where you want to create the `LICENSE` file. The first two arguments to the command are the full name that you want to be attached to the License file and third is the website or email that you wish was attached.
-
 
 Running this :
 
@@ -69,11 +55,5 @@ If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html
 alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 ```
 
-<h1 align="center"> Contribute 💛</h1>
-
-Take a look at the [issues](https://github.com/nikitavoloboev/license-up/issues) and see if you find anything interesting you want to help with. Or [create your own](https://github.com/nikitavoloboev/license-up/issues/new) if you wish something was added or you think is wrong.
-
-
-<h1 align="center"> Thanks 🍀</h1>
-
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. Thank you. 💛
+## Thanks 🍀
+You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. Thank you. 💛 
