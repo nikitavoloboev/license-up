@@ -1,20 +1,20 @@
-# License Up 📜 [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
+# License Up [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
+> Create a license quickly for a given name
 
 [![asciicast](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR.png)](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR)
 
-## Description 📕
-Create a LICENSE file quickly. Currently only MIT license is supported.
+Currently only MIT license is supported.
 
-## Install 💎
+## Install 
 If you have [Go](https://golang.org/dl/) installed, simply run
 
 ```Bash
-go get github.com/nikitavoloboev/license-up
+go get -u github.com/nikitavoloboev/license-up
 ```
 
 to install the command on your system.
 
-## Usage 🚀
+## Usage 
 Use it in the directory where you want to create the `LICENSE` file. The first two arguments to the command are the full name that you want to be attached to the License file and third is the website or email that you wish was attached.
 
 Running this :
@@ -55,5 +55,5 @@ If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html
 alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 ```
 
-## Thanks 🍀
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. Thank you. 💛 
+## Thank you 💜
+You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
