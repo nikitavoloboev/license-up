@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/urfave/cli"
@@ -20,7 +21,7 @@ func create(name string, site string) error {
 		defer fo.Close()
 
 		MIT := "MIT License \n\n" +
-			"Copyright (c) " + string(year) + " " + name + ", " + site + "\n\n" +
+			"Copyright (c) " + strconv.Itoa(year) + " " + name + ", " + site + "\n\n" +
 			"Permission is hereby granted, free of charge, to any person obtaining a copy \n" +
 			"of this software and associated documentation files (the \"Software\"), to deal \n" +
 			"in the Software without restriction, including without limitation the rights \n" +
@@ -47,7 +48,7 @@ func create(name string, site string) error {
 		defer fo.Close()
 
 		MIT := "MIT License \n\n" +
-			"Copyright (c) " + string(year) + " " + name + "\n\n" +
+			"Copyright (c) " + strconv.Itoa(year) + " " + name + "\n\n" +
 			"Permission is hereby granted, free of charge, to any person obtaining a copy \n" +
 			"of this software and associated documentation files (the \"Software\"), to deal \n" +
 			"in the Software without restriction, including without limitation the rights \n" +
