@@ -4,13 +4,11 @@
 Currently only MIT license is supported.
 
 ## Install 
-If you have [Go](https://golang.org/dl/) installed, simply run
+If you have [Go](https://golang.org/dl/) installed, run
 
 ```Bash
 go get -u github.com/nikitavoloboev/license-up
 ```
-
-to install the command on your system.
 
 ## Usage 
 Use it in the directory where you want to create the `LICENSE` file. The first two arguments to the command are the full name that you want to be attached to the License file and third is the website or email that you wish was attached.
