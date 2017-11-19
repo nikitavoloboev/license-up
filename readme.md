@@ -1,8 +1,6 @@
 # License Up [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
 > Create a license quickly for a given name
 
-[![asciicast](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR.png)](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR)
-
 Currently only MIT license is supported.
 
 ## Install 
@@ -54,6 +52,9 @@ If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html
 ```Bash
 alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 ```
+
+## Demo
+[![asciicast](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR.png)](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR)
 
 ## Thank you 💜
 You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
