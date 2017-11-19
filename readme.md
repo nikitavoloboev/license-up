@@ -13,13 +13,13 @@ go get -u github.com/nikitavoloboev/license-up
 ## Usage 
 Use it in the directory where you want to create the `LICENSE` file. The first two arguments to the command are the full name that you want to be attached to the License file and third is the website or email that you wish was attached.
 
-Running this :
+Running this:
 
 ```Bash
 license-up Nikita Voloboev nikitavoloboev.xyz
 ```
 
-Will create a file LICENSE with following content :
+Will create a file LICENSE with following content:
 
 ```Markdown
 MIT License
