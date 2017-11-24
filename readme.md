@@ -3,8 +3,8 @@
 
 Currently only MIT license is supported.
 
-## Install 
-If you have [Go](https://golang.org/dl/) installed, run
+## Installation
+If you have [Go](https://golang.org/dl/) installed, run:
 
 ```Bash
 go get -u github.com/nikitavoloboev/license-up
@@ -45,7 +45,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html) to simplify this. For example I have this alias that I use :
+If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html) to simplify this. For example I have this alias that I use:
 
 ```Bash
 alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
@@ -56,3 +56,6 @@ alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 
 ## Thank you 💜
 You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
+
+## License
+MIT © [Nikita Voloboev](https://www.nikitavoloboev.xyz)
