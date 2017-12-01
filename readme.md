@@ -3,7 +3,7 @@
 
 Currently only MIT license is supported.
 
-## Installation
+## Installing
 If you have [Go](https://golang.org/dl/) installed, run:
 
 ```Bash
@@ -53,6 +53,9 @@ alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 
 ## Demo
 [![asciicast](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR.png)](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR)
+
+## Contributing
+Contributions are welcome! Look into [issues](https://github.com/nikitavoloboev/license-up/issues) and see if anything sparks your interest or [add ideas of your own](https://github.com/nikitavoloboev/license-up/issues/new).
 
 ## Thank you 💜
 You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
