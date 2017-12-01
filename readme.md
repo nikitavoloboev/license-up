@@ -4,7 +4,7 @@
 Currently only MIT license is supported.
 
 ## Installing
-If you have [Go](https://golang.org/dl/) installed, run:
+If you have [Go](https://golang.org/doc/install) installed, run:
 
 ```Bash
 go get -u github.com/nikitavoloboev/license-up
