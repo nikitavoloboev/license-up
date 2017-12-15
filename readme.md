@@ -55,10 +55,10 @@ alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 [![asciicast](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR.png)](https://asciinema.org/a/UUyyFWzZRLJFyOaF91vCtiTkR)
 
 ## Contributing
-Contributions are welcome! Look into [issues](https://github.com/nikitavoloboev/license-up/issues) and see if anything sparks your interest or [add ideas of your own](https://github.com/nikitavoloboev/license-up/issues/new).
+[Suggestions](https://github.com/nikitavoloboev/license-up/issues) and pull requests are highly encouraged!
 
 ## Thank you 💜
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
+You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
 
 ## License
 MIT © [Nikita Voloboev](https://www.nikitavoloboev.xyz)
