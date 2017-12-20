@@ -23,7 +23,7 @@ To create [MIT license](https://opensource.org/licenses/MIT), run:
 license-up mit <name> <surame> <website>
 ```
 
-Where `<website>` is optional. Here is an example of it.
+Where `<website>` is optional. Here is a working example of it.
 
 ```Bash
 license-up mit Nikita Voloboev nikitavoloboev.xyz
