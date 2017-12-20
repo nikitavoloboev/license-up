@@ -6,6 +6,7 @@
 - [Usage](#usage)
 	- [MIT License](#mit-license)
 - [Demo](#demo)
+- [Contributing](#contributing)
 
 ## Installing
 If you have [Go](https://golang.org/doc/install) installed, run:
