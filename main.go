@@ -1,86 +1,22 @@
 package main
 
 import (
-	"fmt"
-	"io/ioutil"
-	"log"
 	"os"
-	"strconv"
-	"time"
 
-	"github.com/urfave/cli"
+	"gopkg.in/alecthomas/kingpin.v2"
 )
 
-func create(name string, site string) error {
-	year, _, _ := time.Now().Date()
-	if site != "" {
-		fo, err := os.Create("LICENSE")
-		if err != nil {
-			log.Fatal(err)
-		}
-		defer fo.Close()
-
-		MIT := "MIT License \n\n" +
-			"Copyright (c) " + strconv.Itoa(year) + " " + name + " <" + site + ">\n\n" +
-			"Permission is hereby granted, free of charge, to any person obtaining a copy \n" +
-			"of this software and associated documentation files (the \"Software\"), to deal \n" +
-			"in the Software without restriction, including without limitation the rights \n" +
-			"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell \n" +
-			"copies of the Software, and to permit persons to whom the Software is \n" +
-			"furnished to do so, subject to the following conditions: \n\n" +
-			"The above copyright notice and this permission notice shall be included in all \n" +
-			"copies or substantial portions of the Software.\n\n" +
-			"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n" +
-			"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n" +
-			"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n" +
-			"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n" +
-			"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n" +
-			"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n" +
-			"SOFTWARE."
-
-		ioutil.WriteFile("LICENSE", []byte(MIT), 0644)
-		fmt.Println("License was created")
-	} else {
-		fo, err := os.Create("LICENSE")
-		if err != nil {
-			log.Fatal(err)
-		}
-		defer fo.Close()
-
-		MIT := "MIT License \n\n" +
-			"Copyright (c) " + strconv.Itoa(year) + " " + name + "\n\n" +
-			"Permission is hereby granted, free of charge, to any person obtaining a copy \n" +
-			"of this software and associated documentation files (the \"Software\"), to deal \n" +
-			"in the Software without restriction, including without limitation the rights \n" +
-			"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell \n" +
-			"copies of the Software, and to permit persons to whom the Software is \n" +
-			"furnished to do so, subject to the following conditions: \n\n" +
-			"The above copyright notice and this permission notice shall be included in all \n" +
-			"copies or substantial portions of the Software.\n\n" +
-			"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n" +
-			"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n" +
-			"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n" +
-			"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n" +
-			"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n" +
-			"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n" +
-			"SOFTWARE."
-
-		ioutil.WriteFile("LICENSE", []byte(MIT), 0644)
-		fmt.Println("License was created")
-	}
-	return nil
-}
+var (
+	app        = kingpin.New("license-up", "A command-line tool to make licences.")
+	mit        = app.Command("mit", "Create MIT license.")
+	mitName    = mit.Arg("name", "Name of license holder.").Required().String()
+	mitSurname = mit.Arg("surname", "Surname of license holder.").Required().String()
+	mitWebsite = mit.Arg("website", "Website of license holder").String()
+)
 
 func main() {
-	app := cli.NewApp()
-
-	app.Action = func(c *cli.Context) error {
-		name := c.Args().Get(0)
-		name += " " + c.Args().Get(1)
-		site := c.Args().Get(2)
-		create(name, site)
-		return nil
+	switch kingpin.MustParse(app.Parse(os.Args[1:])) {
+	case mit.FullCommand():
+		mitCreateWithSite(string(*mitName), string(*mitSurname), string(*mitWebsite))
 	}
-
-	app.Run(os.Args)
 }
