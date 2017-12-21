@@ -21,7 +21,7 @@ Use it in the directory where you want to create the `LICENSE` file.
 To create [MIT license](https://opensource.org/licenses/MIT), run:
 
 ```Bash
-license-up mit <name> <surame> <website>
+license-up mit <name> <surname> <website>
 ```
 
 Where `<website>` is optional. Here is a working example of it.
