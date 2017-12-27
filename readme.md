@@ -11,7 +11,7 @@
 ## Installing
 If you have [Go](https://golang.org/doc/install) installed, run:
 ```Bash
-go get github.com/nikitavoloboev/license-up
+go get -u github.com/nikitavoloboev/license-up
 ```
 
 ## Usage
