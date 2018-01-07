@@ -2,13 +2,13 @@
 > Create a license quickly for a given name
 
 ## Contents
-- [Installing](#installing)
+- [Install](#install)
 - [Usage](#usage)
 	- [MIT License](#mit-license)
 - [Demo](#demo)
 - [Contributing](#contributing)
 
-## Installing
+## Install
 If you have [Go](https://golang.org/doc/install) installed, run:
 ```Bash
 go get -u github.com/nikitavoloboev/license-up
