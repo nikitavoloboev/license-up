@@ -68,6 +68,9 @@ alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
 ## Contributing
 [Suggestions](../../issues/) and pull requests are highly encouraged!
 
+## Related
+- [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
+
 ## Thank you 💜
 You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared.
 
