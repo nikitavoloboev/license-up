@@ -1,8 +1,8 @@
 package main
 
-// cc1Create creates CC1 license
-// func cc1Create() error {
-// 	fo, err := os.Create("LICENSE")
+// cc0Create creates CC1 license
+// func cc0Create() error {
+// 	fo, err := os.Create("license")
 // 	if err != nil {
 // 		log.Fatal(err)
 // 	}
@@ -125,7 +125,7 @@ package main
 // 	For more information, please see
 // 	<http://creativecommons.org/publicdomain/zero/1.0/>"
 
-// 	ioutil.WriteFile("LICENSE", []byte(CC1), 0644)
+// 	ioutil.WriteFile("license", []byte(CC1), 0644)
 // 	fmt.Println("License was created")
 // 	return nil
 // }

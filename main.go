@@ -13,8 +13,8 @@ var (
 	mitSurname = mit.Arg("surname", "Surname of license holder.").Required().String()
 	mitWebsite = mit.Arg("website", "Website of license holder").String()
 
-	// TODO: add license
-	// cc1 = app.Command("cc1", "Create CC1 license.")
+	// TODO: Add license
+	// cc0 = app.Command("cc0", "Create CC0 license.")
 )
 
 func main() {
