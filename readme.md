@@ -1,7 +1,6 @@
 # License Up [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
 > Create a license quickly for a given name
 
-## Contents
 - [Install](#install)
 - [Usage](#usage)
 	- [MIT License](#mit-license)
@@ -66,7 +65,7 @@ alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
 [![asciicast](https://asciinema.org/a/153542.png)](https://asciinema.org/a/153542)
 
 ## Contributing
-[Suggestions](../../issues/) and pull requests are highly encouraged!
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Related
 - [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
