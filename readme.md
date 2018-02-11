@@ -15,7 +15,7 @@ go get -u github.com/nikitavoloboev/license-up
 ```
 
 ## Usage
-Use it in the directory where you want to create the `LICENSE` file.
+Use it in the directory where you want to create the `license` file.
 
 ### MIT License
 To create [MIT license](https://opensource.org/licenses/MIT), run:
@@ -30,7 +30,7 @@ Where `<website>` is optional. Here is a working example of it.
 license-up mit Nikita Voloboev nikitavoloboev.xyz
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 ```Markdown
 MIT License
