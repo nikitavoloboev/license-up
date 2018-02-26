@@ -65,7 +65,7 @@ alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
 [![asciicast](https://asciinema.org/a/153542.png)](https://asciinema.org/a/153542)
 
 ## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md#readme)
+See [contribution guidelines](CONTRIBUTING.md#readme).
 
 ## Related
 - [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
