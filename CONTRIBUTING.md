@@ -1,5 +1,5 @@
-# Contributing
-Thank you for wanting to make `license-up` better. You can:
+# Contributing to License Up
+There are many ways you can contribute. You can:
 - Make suggestions and file bugs in [Issues](../../issues/).
 - Fix issues and add features with [Pull Requests](../../pulls/).
 
