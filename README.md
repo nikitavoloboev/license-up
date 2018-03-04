@@ -1,6 +1,7 @@
 # License Up [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
 > Create a license quickly for a given name
 
+##### Contents
 - [Install](#install)
 - [Usage](#usage)
 	- [MIT License](#mit-license)
