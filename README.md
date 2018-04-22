@@ -1,5 +1,5 @@
 # License Up [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
-> Create a license quickly for a given name
+> Create a license quickly
 
 ##### Contents
 - [Install](#install)
@@ -72,7 +72,7 @@ See [contribution guidelines](CONTRIBUTING.md#readme).
 - [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
 
 ## Thank you 💜
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
+You can support me on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
 
 ## License
-MIT © [Nikita Voloboev](https://www.nikitavoloboev.xyz)
+MIT © [Nikita Voloboev](https://nikitavoloboev.xyz)
