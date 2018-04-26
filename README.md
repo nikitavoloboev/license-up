@@ -9,7 +9,6 @@
 - [Contributing](#contributing)
 
 ## Install
-With [Go](https://golang.org/doc/install) installed, run:
 ```Bash
 go get -u github.com/nikitavoloboev/license-up
 ```
