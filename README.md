@@ -1,22 +1,26 @@
-# License Up [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
+# License Up [![Thanks](http://bit.ly/saythankss)](https://patreon.com/nikitavoloboev)
+
 > Create a license quickly
 
 ##### Contents
+
 - [Install](#install)
-- [Usage](#usage)
-	- [MIT License](#mit-license)
+- [Usage](#usage) - [MIT License](#mit-license)
 - [Demo](#demo)
 - [Contributing](#contributing)
 
 ## Install
+
 ```Bash
 go get -u github.com/nikitavoloboev/license-up
 ```
 
 ## Usage
+
 Use it in the directory where you want to create the `LICENSE` file.
 
 ### MIT License
+
 To create [MIT license](https://opensource.org/licenses/MIT), run:
 
 ```Bash
@@ -62,16 +66,19 @@ alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
 ```
 
 ## Demo
+
 [![asciicast](https://asciinema.org/a/153542.png)](https://asciinema.org/a/153542)
 
 ## Contributing
+
 See [contribution guidelines](CONTRIBUTING.md#readme).
 
 ## Related
+
 - [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
 
-## Thank you 💜
+## Thank you
+
 You can support me on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
 
-## License
-MIT © [Nikita Voloboev](https://nikitavoloboev.xyz)
+[![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](LICENSE) [![Twitter](http://bit.ly/nikitweet)](https://twitter.com/nikitavoloboev)
