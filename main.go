@@ -13,7 +13,7 @@ var (
 	mitSurname = mit.Arg("surname", "Surname of license holder.").Required().String()
 	mitWebsite = mit.Arg("website", "Website of license holder").String()
 
-	// TODO: Add license
+	// TODO: add cc0 
 	// cc0 = app.Command("cc0", "Create CC0 license.")
 )
 

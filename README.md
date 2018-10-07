@@ -6,7 +6,6 @@
 
 - [Install](#install)
 - [Usage](#usage) - [MIT License](#mit-license)
-- [Demo](#demo)
 - [Contributing](#contributing)
 
 ## Install
@@ -38,7 +37,7 @@ Will create a file `LICENSE` with following content:
 ```Markdown
 MIT License
 
-Copyright (c) 2017 Nikita Voloboev (nikitavoloboev.xyz)
+Copyright (c) 2017-present, Nikita Voloboev (nikitavoloboev.xyz)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -64,10 +63,6 @@ If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html
 ```Bash
 alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
 ```
-
-## Demo
-
-[![asciicast](https://asciinema.org/a/153542.png)](https://asciinema.org/a/153542)
 
 ## Contributing
 
