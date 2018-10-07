@@ -5,7 +5,8 @@
 ##### Contents
 
 - [Install](#install)
-- [Usage](#usage) - [MIT License](#mit-license)
+- [Usage](#usage)
+  - [MIT License](#mit-license)
 - [Contributing](#contributing)
 
 ## Install
