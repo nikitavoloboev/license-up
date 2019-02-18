@@ -4,11 +4,11 @@
 
 ##### Contents
 
--   [Install](#install)
--   [Usage](#usage)
-    -   [MIT License](#mit-license)
-    -   [BSD License](#bsd-license)
--   [Contributing](#contributing)
+- [Install](#install)
+- [Usage](#usage)
+  - [MIT License](#mit-license)
+  - [BSD License](#bsd-license)
+- [Contributing](#contributing)
 
 ## Install
 
@@ -74,7 +74,7 @@ To create [BSD license](https://opensource.org/licenses/BSD-3-Clause), run:
 license-up bsd <name> <surname>
 ```
 
-Where `<website>` is optional. Here is a working example of it.
+Here is a working example of it.
 
 ```Bash
 license-up bsd Nikita Voloboev
@@ -126,7 +126,7 @@ See [contribution guidelines](CONTRIBUTING.md#readme).
 
 ## Related
 
--   [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
+- [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
 
 ## Thank you
 
