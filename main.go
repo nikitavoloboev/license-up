@@ -19,6 +19,7 @@ var (
 	bsd3Name    = bsd3.Arg("name", "Name of license holder.").Required().String()
 	bsd3Surname = bsd3.Arg("surname", "Surname of license holder.").Required().String()
 	cc0         = app.Command("cc0", "Create CC0 license.")
+	unlicense   = app.Command("unlicense", "Create Unlicense license.")
 )
 
 func main() {
@@ -31,5 +32,7 @@ func main() {
 		bsd3Create(string(*bsd3Name), string(*bsd3Surname))
 	case cc0.FullCommand():
 		cc0Create()
+	case unlicense.FullCommand():
+		unlicenseCreate()
 	}
 }
