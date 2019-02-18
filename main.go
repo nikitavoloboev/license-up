@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"gopkg.in/alecthomas/kingpin.v2"
+	kingpin "gopkg.in/alecthomas/kingpin.v2"
 )
 
 var (
@@ -12,8 +12,11 @@ var (
 	mitName    = mit.Arg("name", "Name of license holder.").Required().String()
 	mitSurname = mit.Arg("surname", "Surname of license holder.").Required().String()
 	mitWebsite = mit.Arg("website", "Website of license holder").String()
+	bsd        = app.Command("bsd", "Create BSD 3-Clause license.")
+	bsdName    = bsd.Arg("name", "Name of license holder.").Required().String()
+	bsdSurname = bsd.Arg("surname", "Surname of license holder.").Required().String()
 
-	// TODO: add cc0 
+	// TODO: add cc0
 	// cc0 = app.Command("cc0", "Create CC0 license.")
 )
 
@@ -21,5 +24,7 @@ func main() {
 	switch kingpin.MustParse(app.Parse(os.Args[1:])) {
 	case mit.FullCommand():
 		mitCreateWithSite(string(*mitName), string(*mitSurname), string(*mitWebsite))
+	case bsd.FullCommand():
+		bsdCreate(string(*bsdName), string(*bsdSurname))
 	}
 }
