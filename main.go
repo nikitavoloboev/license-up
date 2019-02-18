@@ -18,9 +18,7 @@ var (
 	bsd         = app.Command("bsd", "Create BSD 3-Clause license.")
 	bsdName     = bsd.Arg("name", "Name of license holder.").Required().String()
 	bsdSurname  = bsd.Arg("surname", "Surname of license holder.").Required().String()
-
-	// TODO: add cc0
-	// cc0 = app.Command("cc0", "Create CC0 license.")
+	cc0         = app.Command("cc0", "Create CC0 license.")
 )
 
 func main() {
@@ -31,5 +29,7 @@ func main() {
 		bsd2Create(string(*bsd2Name), string(*bsd2Surname))
 	case bsd.FullCommand():
 		bsdCreate(string(*bsdName), string(*bsdSurname))
+	case cc0.FullCommand():
+		cc0Create()
 	}
 }
