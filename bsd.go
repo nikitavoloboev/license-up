@@ -44,8 +44,8 @@ func bsd2Create(name string, surname string) error {
 	return nil
 }
 
-// bsdCreate creates the BSD 3-Clause license
-func bsdCreate(name string, surname string) error {
+// bsd3Create creates the BSD 3-Clause license
+func bsd3Create(name string, surname string) error {
 	year, _, _ := time.Now().Date()
 	fo, err := os.Create("LICENSE")
 	if err != nil {
@@ -53,7 +53,7 @@ func bsdCreate(name string, surname string) error {
 	}
 	defer fo.Close()
 
-	BSD := "BSD 3-Clause License\n\n" +
+	BSD3 := "BSD 3-Clause License\n\n" +
 		"Copyright (c) " + strconv.Itoa(year) + "-present, " + name + " " + surname + "\n" +
 		"All rights reserved.\n\n" +
 		"Redistribution and use in source and binary forms, with or without\n" +
@@ -77,7 +77,7 @@ func bsdCreate(name string, surname string) error {
 		"OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n" +
 		"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
 
-	ioutil.WriteFile("LICENSE", []byte(BSD), 0644)
+	ioutil.WriteFile("LICENSE", []byte(BSD3), 0644)
 	fmt.Println("License was created")
 	return nil
 }
