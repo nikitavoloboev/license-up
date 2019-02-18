@@ -126,13 +126,13 @@ alias bsd2='license-up bsd2 Nikita Voloboev'
 To create a [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause), run:
 
 ```Bash
-license-up bsd <name> <surname>
+license-up bsd3 <name> <surname>
 ```
 
 Here is a working example of it.
 
 ```Bash
-license-up bsd Nikita Voloboev
+license-up bsd3 Nikita Voloboev
 ```
 
 Will create a file `LICENSE` with following content:
@@ -172,7 +172,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 As an alias:
 
 ```Bash
-alias bsd='license-up bsd Nikita Voloboev'
+alias bsd3='license-up bsd3 Nikita Voloboev'
+```
+
+Or, if you prefer:
+
+```Bash
+alias bsd='license-up bsd3 Nikita Voloboev'
 ```
 
 ### CC0 License
