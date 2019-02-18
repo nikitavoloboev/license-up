@@ -68,7 +68,7 @@ alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
 
 ### BSD License
 
-To create [BSD license](https://opensource.org/licenses/BSD), run:
+To create [BSD license](https://opensource.org/licenses/BSD-3-Clause), run:
 
 ```Bash
 license-up bsd <name> <surname>
