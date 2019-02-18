@@ -8,6 +8,8 @@
 - [Usage](#usage)
   - [MIT License](#mit-license)
   - [BSD License](#bsd-license)
+    - [2-Clause](#2-clause)
+    - [3-Clause](#3-clause)
 - [Contributing](#contributing)
 
 ## Install
@@ -68,7 +70,59 @@ alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
 
 ### BSD License
 
-To create [BSD license](https://opensource.org/licenses/BSD-3-Clause), run:
+#### 2-Clause
+
+To create a [BSD 2-Clause license](https://opensource.org/licenses/BSD-2-Clause), run:
+
+```Bash
+license-up bsd2 <name> <surname>
+```
+
+Here is a working example of it.
+
+```Bash
+license-up bsd2 Nikita Voloboev
+```
+
+Will create a file `LICENSE` with following content:
+
+```Markdown
+BSD 2-Clause License
+
+Copyright (c) 2019-present, Nikita Voloboev
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+```
+
+If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html) to simplify this. For example I have this alias that I use:
+
+```Bash
+alias bsd2='license-up bsd2 Nikita Voloboev'
+```
+
+#### 3-Clause
+
+To create a [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause), run:
 
 ```Bash
 license-up bsd <name> <surname>
