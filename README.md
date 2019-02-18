@@ -325,7 +325,7 @@ alias cc0='license-up cc0'
 
 ### Unlicense License
 
-To create a [Unlicense license](https://oss.ninja/unlicense), run:
+To create an [Unlicense license](https://oss.ninja/unlicense), run:
 
 ```Bash
 license-up unlicense
