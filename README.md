@@ -39,7 +39,7 @@ Will create a file `LICENSE` with following content:
 ```Markdown
 MIT License
 
-Copyright (c) 2017-present, Nikita Voloboev (nikitavoloboev.xyz)
+Copyright (c) 2019-present, Nikita Voloboev (nikitavoloboev.xyz)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -85,7 +85,7 @@ Will create a file `LICENSE` with following content:
 ```Markdown
 BSD 3-Clause License
 
-Copyright (c) 2019, Nikita Voloboev
+Copyright (c) 2019-present, Nikita Voloboev
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
