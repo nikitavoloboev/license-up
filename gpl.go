@@ -17,10 +17,10 @@ func gpl2Create() error {
 
 	GPL2 := "                    GNU GENERAL PUBLIC LICENSE\n" +
 		"                       Version 2, June 1991\n\n" +
-		"Copyright (C) 1989, 1991 Free Software Foundation, Inc.,\n" +
-		"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA\n" +
-		"Everyone is permitted to copy and distribute verbatim copies\n" +
-		"of this license document, but changing it is not allowed.\n\n" +
+		" Copyright (C) 1989, 1991 Free Software Foundation, Inc.,\n" +
+		" 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA\n" +
+		" Everyone is permitted to copy and distribute verbatim copies\n" +
+		" of this license document, but changing it is not allowed.\n\n" +
 		"                            Preamble\n\n" +
 		"  The licenses for most software are designed to take away your\n" +
 		"freedom to share and change it.  By contrast, the GNU General Public\n" +
