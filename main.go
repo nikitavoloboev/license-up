@@ -12,7 +12,7 @@ import (
 
 var (
 	app         = kingpin.New("license-up", "A command-line tool to make licences.")
-	force       = app.Flag("force", "Force to create a license.").Short('f').Bool()
+	force       = app.Flag("force", "Create a license even if license already exists.").Short('f').Bool()
 	mit         = app.Command("mit", "Create MIT license.")
 	mitName     = mit.Arg("name", "Name of license holder.").Required().String()
 	mitSurname  = mit.Arg("surname", "Surname of license holder.").Required().String()
@@ -38,8 +38,10 @@ func main() {
 		}
 		reader := bufio.NewReader(os.Stdin)
 		overwrite := false
+		has_license := false
 		for _, f := range files {
 			if f.Name() == "LICENSE" {
+				has_license = true
 				fmt.Print("There is already a license present in current directory. Do you want to overwrite it with a new one? [y/N] ")
 				text, _ := reader.ReadString('\n')
 				switch text {
@@ -50,7 +52,7 @@ func main() {
 				}
 			}
 		}
-		if overwrite == false {
+		if has_license == true && overwrite == false {
 			os.Exit(0)
 		}
 	}
