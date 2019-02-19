@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	app         = kingpin.New("license-up", "A command-line tool to make licences.")
+	app         = kingpin.New("license-up", "A command-line tool to make licences.").Version("1.0.0")
 	force       = app.Flag("force", "Create a license even if license already exists.").Short('f').Bool()
 	mit         = app.Command("mit", "Create MIT license.")
 	mitName     = mit.Arg("name", "Name of license holder.").Required().String()
