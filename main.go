@@ -38,10 +38,10 @@ func main() {
 		}
 		reader := bufio.NewReader(os.Stdin)
 		overwrite := false
-		has_license := false
+		hasLicense := false
 		for _, f := range files {
 			if f.Name() == "LICENSE" {
-				has_license = true
+				hasLicense = true
 				fmt.Print("There is already a license present in current directory. Do you want to overwrite it with a new one? [y/N] ")
 				text, _ := reader.ReadString('\n')
 				switch text {
@@ -52,7 +52,7 @@ func main() {
 				}
 			}
 		}
-		if has_license == true && overwrite == false {
+		if hasLicense == true && overwrite == false {
 			os.Exit(0)
 		}
 	}
