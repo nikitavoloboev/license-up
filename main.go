@@ -1,6 +1,10 @@
 package main
 
 import (
+	"bufio"
+	"fmt"
+	"io/ioutil"
+	"log"
 	"os"
 
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
@@ -8,6 +12,7 @@ import (
 
 var (
 	app         = kingpin.New("license-up", "A command-line tool to make licences.")
+	force       = app.Flag("force", "Force to create a license.").Short('f').Bool()
 	mit         = app.Command("mit", "Create MIT license.")
 	mitName     = mit.Arg("name", "Name of license holder.").Required().String()
 	mitSurname  = mit.Arg("surname", "Surname of license holder.").Required().String()
@@ -25,6 +30,30 @@ var (
 )
 
 func main() {
+	kingpin.MustParse(app.Parse(os.Args[1:]))
+	if bool(*force) == false {
+		files, err := ioutil.ReadDir(".")
+		if err != nil {
+			log.Fatal(err)
+		}
+		reader := bufio.NewReader(os.Stdin)
+		overwrite := false
+		for _, f := range files {
+			if f.Name() == "LICENSE" {
+				fmt.Print("There is already a license present in current directory. Do you want to overwrite it with a new one? [y/N] ")
+				text, _ := reader.ReadString('\n')
+				switch text {
+				case "y\n":
+					overwrite = true
+				case "Y\n":
+					overwrite = true
+				}
+			}
+		}
+		if overwrite == false {
+			os.Exit(0)
+		}
+	}
 	switch kingpin.MustParse(app.Parse(os.Args[1:])) {
 	case mit.FullCommand():
 		mitCreateWithSite(string(*mitName), string(*mitSurname), string(*mitWebsite))
