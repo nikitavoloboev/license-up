@@ -42,6 +42,8 @@ license-up mit Nikita Voloboev nikitavoloboev.xyz
 
 Will create a file `LICENSE` with following content:
 
+<details><summary>Click to show content</summary>
+
 ```Markdown
 MIT License
 
@@ -66,6 +68,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+</details>
+
+<br>
+
 If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html) to simplify this. For example I have this alias that I use:
 
 ```Bash
@@ -89,6 +95,8 @@ license-up bsd2 Nikita Voloboev
 ```
 
 Will create a file `LICENSE` with following content:
+
+<details><summary>Click to show content</summary>
 
 ```Markdown
 BSD 2-Clause License
@@ -118,6 +126,10 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
+</details>
+
+<br>
+
 As an alias:
 
 ```Bash
@@ -139,6 +151,8 @@ license-up bsd3 Nikita Voloboev
 ```
 
 Will create a file `LICENSE` with following content:
+
+<details><summary>Click to show content</summary>
 
 ```Markdown
 BSD 3-Clause License
@@ -172,6 +186,10 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
+</details>
+
+<br>
+
 As an alias:
 
 ```Bash
@@ -199,6 +217,8 @@ license-up cc0
 ```
 
 Will create a file `LICENSE` with following content:
+
+<details><summary>Click to show content</summary>
 
 ```Markdown
 CC0 1.0 Universal
@@ -319,6 +339,10 @@ For more information, please see
 <http://creativecommons.org/publicdomain/zero/1.0/>
 ```
 
+</details>
+
+<br>
+
 As an alias:
 
 ```Bash
@@ -340,6 +364,8 @@ license-up unlicense
 ```
 
 Will create a file `LICENSE` with following content:
+
+<details><summary>Click to show content</summary>
 
 ```Markdown
 This is free and unencumbered software released into the public domain.
@@ -367,6 +393,10 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org>
 ```
+
+</details>
+
+<br>
 
 As an alias:
 
