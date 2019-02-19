@@ -34,7 +34,7 @@ func unlicenseCreate() error {
 		"OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\n" +
 		"ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\n" +
 		"OTHER DEALINGS IN THE SOFTWARE.\n\n" +
-		"For more information, please refer to <http://unlicense.org>"
+		"For more information, please refer to <http://unlicense.org>\n"
 
 	ioutil.WriteFile("LICENSE", []byte(Unlicense), 0644)
 	fmt.Println("License was created")

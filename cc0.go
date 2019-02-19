@@ -110,7 +110,7 @@ func cc0Create() error {
 		"  party to this document and has no duty or obligation with respect to this\n" +
 		"  CC0 or use of the Work.\n\n" +
 		"For more information, please see\n" +
-		"<http://creativecommons.org/publicdomain/zero/1.0/>"
+		"<http://creativecommons.org/publicdomain/zero/1.0/>\n"
 
 	ioutil.WriteFile("LICENSE", []byte(CC0), 0644)
 	fmt.Println("License was created")
