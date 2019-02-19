@@ -20,6 +20,7 @@ var (
 	bsd3Surname = bsd3.Arg("surname", "Surname of license holder.").Required().String()
 	cc0         = app.Command("cc0", "Create CC0 license.")
 	unlicense   = app.Command("unlicense", "Create Unlicense license.")
+	gpl3        = app.Command("gpl3", "Create GNU General Public License version 3.")
 )
 
 func main() {
@@ -34,5 +35,7 @@ func main() {
 		cc0Create()
 	case unlicense.FullCommand():
 		unlicenseCreate()
+	case gpl3.FullCommand():
+		gpl3Create()
 	}
 }
