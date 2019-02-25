@@ -16,6 +16,7 @@
     - [Version 2](#version-2)
     - [Version 3](#version-3)
   - [ISC License](#isc-license)
+  - [WTFPL License](#wtfpl-license)
 - [Contributing](#contributing)
 
 ## Install
@@ -1531,6 +1532,50 @@ As an alias:
 
 ```Bash
 alias isc='license-up isc Nikita Voloboev'
+```
+
+### WTFPL License
+
+To create [WTFPL license](https://oss.ninja/wtfpl), run:
+
+```Bash
+license-up wtfpl <name> <surname>
+```
+
+Here is a working example of it.
+
+```Bash
+license-up wtfpl Nikita Voloboev
+```
+
+Will create a file `LICENSE` with following content:
+
+<details><summary>Click to show content</summary>
+
+```Markdown
+        DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+Copyright (c) 2019-present, Nikita Voloboev
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+0. You just DO WHAT THE FUCK YOU WANT TO.
+```
+
+</details>
+
+<br>
+
+As an alias:
+
+```Bash
+alias wtfpl='license-up wtfpl Nikita Voloboev'
 ```
 
 ## Contributing
