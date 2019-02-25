@@ -1527,10 +1527,10 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 <br>
 
-If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html) to simplify this. For example I have this alias that I use:
+As an alias:
 
 ```Bash
-alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
+alias isc='license-up isc Nikita Voloboev'
 ```
 
 ## Contributing
