@@ -15,6 +15,7 @@
   - [GPL](#gpl)
     - [Version 2](#version-2)
     - [Version 3](#version-3)
+  - [ISC License](#isc-license)
 - [Contributing](#contributing)
 
 ## Install
@@ -1486,6 +1487,50 @@ Or, if you prefer:
 
 ```Bash
 alias gpl='license-up gpl3'
+```
+
+### ISC License
+
+To create [ISC license](https://opensource.org/licenses/ISC), run:
+
+```Bash
+license-up isc <name> <surname>
+```
+
+Here is a working example of it.
+
+```Bash
+license-up isc Nikita Voloboev
+```
+
+Will create a file `LICENSE` with following content:
+
+<details><summary>Click to show content</summary>
+
+```Markdown
+Copyright (c) 2019-present, Nikita Voloboev
+
+Permission to use, copy, modify, and distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+```
+
+</details>
+
+<br>
+
+As an alias:
+
+```Bash
+alias isc='license-up isc Nikita Voloboev'
 ```
 
 ## Contributing

@@ -27,6 +27,9 @@ var (
 	unlicense   = app.Command("unlicense", "Create Unlicense license.")
 	gpl2        = app.Command("gpl2", "Create GNU General Public License version 2.")
 	gpl3        = app.Command("gpl3", "Create GNU General Public License version 3.")
+	isc         = app.Command("isc", "Create ISC license.")
+	iscName     = isc.Arg("name", "Name of license holder.").Required().String()
+	iscSurname  = isc.Arg("surname", "Surname of license holder.").Required().String()
 )
 
 func main() {
@@ -71,5 +74,7 @@ func main() {
 		gpl2Create()
 	case gpl3.FullCommand():
 		gpl3Create()
+	case isc.FullCommand():
+		iscCreate(string(*iscName), string(*iscSurname))
 	}
 }
