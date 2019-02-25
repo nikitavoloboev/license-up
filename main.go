@@ -61,7 +61,11 @@ func main() {
 	}
 	switch kingpin.MustParse(app.Parse(os.Args[1:])) {
 	case mit.FullCommand():
-		mitCreateWithSite(string(*mitName), string(*mitSurname), string(*mitWebsite))
+		if string(*mitWebsite) == "" {
+			mitCreate(string(*mitName), string(*mitSurname))
+		} else {
+			mitCreateWithSite(string(*mitName), string(*mitSurname), string(*mitWebsite))
+		}
 	case bsd2.FullCommand():
 		bsd2Create(string(*bsd2Name), string(*bsd2Surname))
 	case bsd3.FullCommand():
