@@ -29,6 +29,8 @@ go get -u github.com/nikitavoloboev/license-up
 
 Use it in the directory where you want to create the `LICENSE` file.
 
+Note that you can also create a `LICENSE.md` file instead by passing in a `--md` flag.
+
 ### MIT License
 
 To create [MIT license](https://opensource.org/licenses/MIT), run:
