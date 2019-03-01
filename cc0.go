@@ -8,8 +8,8 @@ import (
 )
 
 // cc0Create creates the CC0 1.0 Universal license
-func cc0Create() error {
-	fo, err := os.Create("LICENSE")
+func cc0Create(fileName string) error {
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -112,7 +112,7 @@ func cc0Create() error {
 		"For more information, please see\n" +
 		"<http://creativecommons.org/publicdomain/zero/1.0/>\n"
 
-	ioutil.WriteFile("LICENSE", []byte(CC0), 0644)
+	ioutil.WriteFile(fileName, []byte(CC0), 0644)
 	fmt.Println("License was created")
 	return nil
 }

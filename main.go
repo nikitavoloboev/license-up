@@ -13,6 +13,7 @@ import (
 var (
 	app          = kingpin.New("license-up", "A command-line tool to make licences.").Version("1.0.0")
 	force        = app.Flag("force", "Create a license even if license already exists.").Short('f').Bool()
+	md           = app.Flag("md", "Create a LICENSE.md file instead of a LICENSE file.").Bool()
 	mit          = app.Command("mit", "Create MIT license.")
 	mitName      = mit.Arg("name", "Name of license holder.").Required().String()
 	mitSurname   = mit.Arg("surname", "Surname of license holder.").Required().String()
@@ -37,6 +38,14 @@ var (
 
 func main() {
 	kingpin.MustParse(app.Parse(os.Args[1:]))
+	// Check to see if the user wants to create a `LICENSE.md` file instead of a `LICENSE` file
+	fileName := "LICENSE"
+	if bool(*md) == true {
+		fileName = "LICENSE.md"
+	}
+	fmt.Println(fileName)
+	fmt.Println(bool(*force))
+	// Check to see if we are overwriting any existing license files
 	if bool(*force) == false {
 		files, err := ioutil.ReadDir(".")
 		if err != nil {
@@ -46,7 +55,7 @@ func main() {
 		overwrite := false
 		hasLicense := false
 		for _, f := range files {
-			if f.Name() == "LICENSE" {
+			if f.Name() == fileName {
 				hasLicense = true
 				fmt.Print("There is already a license present in current directory. Do you want to overwrite it with a new one? [y/N] ")
 				text, _ := reader.ReadString('\n')
@@ -62,28 +71,29 @@ func main() {
 			os.Exit(0)
 		}
 	}
+	// Create the licenses
 	switch kingpin.MustParse(app.Parse(os.Args[1:])) {
 	case mit.FullCommand():
 		if string(*mitWebsite) == "" {
-			mitCreate(string(*mitName), string(*mitSurname))
+			mitCreate(string(*mitName), string(*mitSurname), fileName)
 		} else {
-			mitCreateWithSite(string(*mitName), string(*mitSurname), string(*mitWebsite))
+			mitCreateWithSite(string(*mitName), string(*mitSurname), string(*mitWebsite), fileName)
 		}
 	case bsd2.FullCommand():
-		bsd2Create(string(*bsd2Name), string(*bsd2Surname))
+		bsd2Create(string(*bsd2Name), string(*bsd2Surname), fileName)
 	case bsd3.FullCommand():
-		bsd3Create(string(*bsd3Name), string(*bsd3Surname))
+		bsd3Create(string(*bsd3Name), string(*bsd3Surname), fileName)
 	case cc0.FullCommand():
-		cc0Create()
+		cc0Create(fileName)
 	case unlicense.FullCommand():
-		unlicenseCreate()
+		unlicenseCreate(fileName)
 	case gpl2.FullCommand():
-		gpl2Create()
+		gpl2Create(fileName)
 	case gpl3.FullCommand():
-		gpl3Create()
+		gpl3Create(fileName)
 	case isc.FullCommand():
-		iscCreate(string(*iscName), string(*iscSurname))
+		iscCreate(string(*iscName), string(*iscSurname), fileName)
 	case wtfpl.FullCommand():
-		wtfplCreate(string(*wtfplName), string(*wtfplSurname))
+		wtfplCreate(string(*wtfplName), string(*wtfplSurname), fileName)
 	}
 }

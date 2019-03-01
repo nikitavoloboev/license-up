@@ -10,9 +10,9 @@ import (
 )
 
 // iscCreate creates the ISC license
-func iscCreate(name string, surname string) error {
+func iscCreate(name string, surname string, fileName string) error {
 	year, _, _ := time.Now().Date()
-	fo, err := os.Create("LICENSE")
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -30,7 +30,7 @@ func iscCreate(name string, surname string) error {
 		"ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\n" +
 		"OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n"
 
-	ioutil.WriteFile("LICENSE", []byte(ISC), 0644)
+	ioutil.WriteFile(fileName, []byte(ISC), 0644)
 	fmt.Println("License was created")
 	return nil
 }

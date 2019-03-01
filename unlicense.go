@@ -8,8 +8,8 @@ import (
 )
 
 // unlicenseCreate creates the Unlicense license
-func unlicenseCreate() error {
-	fo, err := os.Create("LICENSE")
+func unlicenseCreate(fileName string) error {
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -36,7 +36,7 @@ func unlicenseCreate() error {
 		"OTHER DEALINGS IN THE SOFTWARE.\n\n" +
 		"For more information, please refer to <http://unlicense.org>\n"
 
-	ioutil.WriteFile("LICENSE", []byte(Unlicense), 0644)
+	ioutil.WriteFile(fileName, []byte(Unlicense), 0644)
 	fmt.Println("License was created")
 	return nil
 }

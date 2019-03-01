@@ -10,9 +10,9 @@ import (
 )
 
 // mitCreateWithSite creates MIT license with name and a website
-func mitCreateWithSite(name string, surname string, site string) error {
+func mitCreateWithSite(name string, surname string, site string, fileName string) error {
 	year, _, _ := time.Now().Date()
-	fo, err := os.Create("LICENSE")
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -36,15 +36,15 @@ func mitCreateWithSite(name string, surname string, site string) error {
 		"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n" +
 		"SOFTWARE."
 
-	ioutil.WriteFile("LICENSE", []byte(MIT), 0644)
+	ioutil.WriteFile(fileName, []byte(MIT), 0644)
 	fmt.Println("License was created")
 	return nil
 }
 
 // mitCreate creates MIT license
-func mitCreate(name string, surname string) error {
+func mitCreate(name string, surname string, fileName string) error {
 	year, _, _ := time.Now().Date()
-	fo, err := os.Create("LICENSE")
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -68,7 +68,7 @@ func mitCreate(name string, surname string) error {
 		"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n" +
 		"SOFTWARE.\n"
 
-	ioutil.WriteFile("LICENSE", []byte(MIT), 0644)
+	ioutil.WriteFile(fileName, []byte(MIT), 0644)
 	fmt.Println("License was created")
 	return nil
 }
