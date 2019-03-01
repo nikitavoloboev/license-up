@@ -10,9 +10,9 @@ import (
 )
 
 // bsd2Create creates the BSD 2-Clause license
-func bsd2Create(name string, surname string) error {
+func bsd2Create(name string, surname string, fileName string) error {
 	year, _, _ := time.Now().Date()
-	fo, err := os.Create("LICENSE")
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -39,15 +39,15 @@ func bsd2Create(name string, surname string) error {
 		"OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n" +
 		"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
 
-	ioutil.WriteFile("LICENSE", []byte(BSD2), 0644)
+	ioutil.WriteFile(fileName, []byte(BSD2), 0644)
 	fmt.Println("License was created")
 	return nil
 }
 
 // bsd3Create creates the BSD 3-Clause license
-func bsd3Create(name string, surname string) error {
+func bsd3Create(name string, surname string, fileName string) error {
 	year, _, _ := time.Now().Date()
-	fo, err := os.Create("LICENSE")
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -77,7 +77,7 @@ func bsd3Create(name string, surname string) error {
 		"OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n" +
 		"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
 
-	ioutil.WriteFile("LICENSE", []byte(BSD3), 0644)
+	ioutil.WriteFile(fileName, []byte(BSD3), 0644)
 	fmt.Println("License was created")
 	return nil
 }

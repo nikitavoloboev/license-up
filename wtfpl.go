@@ -10,9 +10,9 @@ import (
 )
 
 // wtfplCreate creates the WTFPL license
-func wtfplCreate(name string, surname string) error {
+func wtfplCreate(name string, surname string, fileName string) error {
 	year, _, _ := time.Now().Date()
-	fo, err := os.Create("LICENSE")
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -28,7 +28,7 @@ func wtfplCreate(name string, surname string) error {
 		"   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n" +
 		"0. You just DO WHAT THE FUCK YOU WANT TO.\n"
 
-	ioutil.WriteFile("LICENSE", []byte(WTFPL), 0644)
+	ioutil.WriteFile(fileName, []byte(WTFPL), 0644)
 	fmt.Println("License was created")
 	return nil
 }

@@ -8,8 +8,8 @@ import (
 )
 
 // gpl2Create creates the GNU General Public License version 2
-func gpl2Create() error {
-	fo, err := os.Create("LICENSE")
+func gpl2Create(fileName string) error {
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -297,14 +297,14 @@ func gpl2Create() error {
 		"library.  If this is what you want to do, use the GNU Lesser General\n" +
 		"Public License instead of this License.\n"
 
-	ioutil.WriteFile("LICENSE", []byte(GPL2), 0644)
+	ioutil.WriteFile(fileName, []byte(GPL2), 0644)
 	fmt.Println("License was created")
 	return nil
 }
 
 // gpl3Create creates the GNU General Public License version 3
-func gpl3Create() error {
-	fo, err := os.Create("LICENSE")
+func gpl3Create(fileName string) error {
+	fo, err := os.Create(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -864,7 +864,7 @@ func gpl3Create() error {
 		"Public License instead of this License.  But first, please read\n" +
 		"<http://www.gnu.org/philosophy/why-not-lgpl.html>.\n"
 
-	ioutil.WriteFile("LICENSE", []byte(GPL3), 0644)
+	ioutil.WriteFile(fileName, []byte(GPL3), 0644)
 	fmt.Println("License was created")
 	return nil
 }
