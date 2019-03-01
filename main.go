@@ -43,8 +43,6 @@ func main() {
 	if bool(*md) == true {
 		fileName = "LICENSE.md"
 	}
-	fmt.Println(fileName)
-	fmt.Println(bool(*force))
 	// Check to see if we are overwriting any existing license files
 	if bool(*force) == false {
 		files, err := ioutil.ReadDir(".")
