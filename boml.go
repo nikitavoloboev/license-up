@@ -54,7 +54,6 @@ func bomlCreate(fileName string, isMD bool) error {
 		"will be liable to anyone for any damages related to this\n" +
 		"software or this license, under any kind of legal claim.***\n"
 
-	// TODO: Is this correct?
 	BOML := "Blue Oak Model License\n\n" +
 		"Version 1.0.0\n\n" +
 		"Purpose\n\n" +
