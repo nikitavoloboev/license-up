@@ -33,7 +33,7 @@ Note that you can also create a `LICENSE.md` file instead by passing in a `--md`
 
 ### MIT License
 
-To create [MIT license](https://opensource.org/licenses/MIT), run:
+To create [MIT license](https://spdx.org/licenses/MIT.html), run:
 
 ```Bash
 license-up mit <name> <surname> [<website>]
@@ -87,7 +87,7 @@ alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
 
 #### 2-Clause
 
-To create a [BSD 2-Clause license](https://opensource.org/licenses/BSD-2-Clause), run:
+To create a [BSD 2-Clause license](https://spdx.org/licenses/BSD-2-Clause.html), run:
 
 ```Bash
 license-up bsd2 <name> <surname>
@@ -143,7 +143,7 @@ alias bsd2='license-up bsd2 Nikita Voloboev'
 
 #### 3-Clause
 
-To create a [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause), run:
+To create a [BSD 3-Clause license](https://spdx.org/licenses/BSD-3-Clause.html), run:
 
 ```Bash
 license-up bsd3 <name> <surname>
@@ -209,7 +209,7 @@ alias bsd='license-up bsd3 Nikita Voloboev'
 
 ### CC0 License
 
-To create a [CC0 license](http://creativecommons.org/publicdomain/zero/1.0/), run:
+To create a [CC0 license](https://spdx.org/licenses/CC0-1.0.html), run:
 
 ```Bash
 license-up cc0
@@ -356,7 +356,7 @@ alias cc0='license-up cc0'
 
 ### Unlicense License
 
-To create an [Unlicense license](https://oss.ninja/unlicense), run:
+To create an [Unlicense license](https://spdx.org/licenses/Unlicense.html), run:
 
 ```Bash
 license-up unlicense
@@ -413,7 +413,7 @@ alias unlicense='license-up unlicense'
 
 #### Version 2
 
-To create a [GNU General Public License version 2](https://oss.ninja/gpl-2.0), run:
+To create a [GNU General Public License version 2](https://spdx.org/licenses/GPL-2.0-only.html), run:
 
 ```Bash
 license-up gpl2
@@ -783,7 +783,7 @@ alias gpl2='license-up gpl2'
 
 #### Version 3
 
-To create a [GNU General Public License version 3](https://oss.ninja/gpl-3.0), run:
+To create a [GNU General Public License version 3](https://spdx.org/licenses/GPL-3.0-only.html), run:
 
 ```Bash
 license-up gpl3
@@ -1494,7 +1494,7 @@ alias gpl='license-up gpl3'
 
 ### ISC License
 
-To create [ISC license](https://opensource.org/licenses/ISC), run:
+To create [ISC license](https://spdx.org/licenses/ISC.html), run:
 
 ```Bash
 license-up isc <name> <surname>
@@ -1538,7 +1538,7 @@ alias isc='license-up isc Nikita Voloboev'
 
 ### WTFPL License
 
-To create [WTFPL license](https://oss.ninja/wtfpl), run:
+To create [WTFPL license](https://spdx.org/licenses/WTFPL.html), run:
 
 ```Bash
 license-up wtfpl <name> <surname>
@@ -1587,6 +1587,7 @@ See [contribution guidelines](CONTRIBUTING.md#readme).
 ## Related
 
 - [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
+- [SPDX License List](https://spdx.org/licenses/) - List of commonly found licenses.
 
 ## Thank you
 
