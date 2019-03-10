@@ -34,6 +34,7 @@ var (
 	wtfpl        = app.Command("wtfpl", "Create WTFPL license.")
 	wtfplName    = wtfpl.Arg("name", "Name of license holder.").Required().String()
 	wtfplSurname = wtfpl.Arg("surname", "Surname of license holder.").Required().String()
+	boml         = app.Command("boml", "Create Blue Oak Model license.")
 )
 
 func main() {
@@ -93,5 +94,7 @@ func main() {
 		iscCreate(string(*iscName), string(*iscSurname), fileName)
 	case wtfpl.FullCommand():
 		wtfplCreate(string(*wtfplName), string(*wtfplSurname), fileName)
+	case boml.FullCommand():
+		bomlCreate(fileName, bool(*md))
 	}
 }

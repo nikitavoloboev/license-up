@@ -17,6 +17,7 @@
     - [Version 3](#version-3)
   - [ISC License](#isc-license)
   - [WTFPL License](#wtfpl-license)
+  - [Blue Oak Model License](#blue-oak-model-license)
 - [Contributing](#contributing)
 
 ## Install
@@ -33,7 +34,7 @@ Note that you can also create a `LICENSE.md` file instead by passing in a `--md`
 
 ### MIT License
 
-To create [MIT license](https://opensource.org/licenses/MIT), run:
+To create [MIT license](https://spdx.org/licenses/MIT.html), run:
 
 ```Bash
 license-up mit <name> <surname> [<website>]
@@ -87,7 +88,7 @@ alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
 
 #### 2-Clause
 
-To create a [BSD 2-Clause license](https://opensource.org/licenses/BSD-2-Clause), run:
+To create a [BSD 2-Clause license](https://spdx.org/licenses/BSD-2-Clause.html), run:
 
 ```Bash
 license-up bsd2 <name> <surname>
@@ -143,7 +144,7 @@ alias bsd2='license-up bsd2 Nikita Voloboev'
 
 #### 3-Clause
 
-To create a [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause), run:
+To create a [BSD 3-Clause license](https://spdx.org/licenses/BSD-3-Clause.html), run:
 
 ```Bash
 license-up bsd3 <name> <surname>
@@ -209,7 +210,7 @@ alias bsd='license-up bsd3 Nikita Voloboev'
 
 ### CC0 License
 
-To create a [CC0 license](http://creativecommons.org/publicdomain/zero/1.0/), run:
+To create a [CC0 license](https://spdx.org/licenses/CC0-1.0.html), run:
 
 ```Bash
 license-up cc0
@@ -356,7 +357,7 @@ alias cc0='license-up cc0'
 
 ### Unlicense License
 
-To create an [Unlicense license](https://oss.ninja/unlicense), run:
+To create an [Unlicense license](https://spdx.org/licenses/Unlicense.html), run:
 
 ```Bash
 license-up unlicense
@@ -413,7 +414,7 @@ alias unlicense='license-up unlicense'
 
 #### Version 2
 
-To create a [GNU General Public License version 2](https://oss.ninja/gpl-2.0), run:
+To create a [GNU General Public License version 2](https://spdx.org/licenses/GPL-2.0-only.html), run:
 
 ```Bash
 license-up gpl2
@@ -783,7 +784,7 @@ alias gpl2='license-up gpl2'
 
 #### Version 3
 
-To create a [GNU General Public License version 3](https://oss.ninja/gpl-3.0), run:
+To create a [GNU General Public License version 3](https://spdx.org/licenses/GPL-3.0-only.html), run:
 
 ```Bash
 license-up gpl3
@@ -1494,7 +1495,7 @@ alias gpl='license-up gpl3'
 
 ### ISC License
 
-To create [ISC license](https://opensource.org/licenses/ISC), run:
+To create [ISC license](https://spdx.org/licenses/ISC.html), run:
 
 ```Bash
 license-up isc <name> <surname>
@@ -1538,7 +1539,7 @@ alias isc='license-up isc Nikita Voloboev'
 
 ### WTFPL License
 
-To create [WTFPL license](https://oss.ninja/wtfpl), run:
+To create [WTFPL license](https://spdx.org/licenses/WTFPL.html), run:
 
 ```Bash
 license-up wtfpl <name> <surname>
@@ -1580,6 +1581,92 @@ As an alias:
 alias wtfpl='license-up wtfpl Nikita Voloboev'
 ```
 
+### Blue Oak Model License
+
+To create [Blue Oak Model license](https://blueoakcouncil.org/license/1.0.0), run:
+
+```Bash
+license-up boml
+```
+
+Here is a working example of it.
+
+```Bash
+license-up boml
+```
+
+Will create a file `LICENSE` with following content:
+
+<details><summary>Click to show content</summary>
+
+```Markdown
+Blue Oak Model License
+
+Version 1.0.0
+
+Purpose
+
+This license gives everyone as much permission to work with
+this software as possible, while protecting contributors
+from liability.
+
+Acceptance
+
+In order to receive this license, you must agree to its
+rules.  The rules of this license are both obligations
+under that agreement and conditions to your license.
+You must not do anything with this software that triggers
+a rule that you cannot or will not follow.
+
+Copyright
+
+Each contributor licenses you to do everything with this
+software that would otherwise infringe that contributor's
+copyright in it.
+
+Notices
+
+You must ensure that everyone who gets a copy of
+any part of this software from you, with or without
+changes, also gets the text of this license or a link to
+<https://blueoakcouncil.org/license/1.0.0>.
+
+Excuse
+
+If anyone notifies you in writing that you have not
+complied with Notices, you can keep your
+license by taking all practical steps to comply within 30
+days after the notice.  If you do not do so, your license
+ends immediately.
+
+Patent
+
+Each contributor licenses you to do everything with this
+software that would otherwise infringe any patent claims
+they can license or become able to license.
+
+Reliability
+
+No contributor can revoke this license.
+
+No Liability
+
+As far as the law allows, this software comes as is,
+without any warranty or condition, and no contributor
+will be liable to anyone for any damages related to this
+software or this license, under any kind of legal claim.
+```
+
+</details>
+
+<br>
+
+As an alias:
+
+```Bash
+alias boml='license-up boml'
+```
+
 ## Contributing
 
 See [contribution guidelines](CONTRIBUTING.md#readme).
@@ -1587,6 +1674,7 @@ See [contribution guidelines](CONTRIBUTING.md#readme).
 ## Related
 
 - [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
+- [SPDX License List](https://spdx.org/licenses/) - List of commonly found licenses.
 
 ## Thank you
 
