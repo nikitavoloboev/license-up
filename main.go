@@ -2,10 +2,15 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
+	"os/exec"
+	"strconv"
+	"strings"
+	"time"
 
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 )
@@ -36,6 +41,67 @@ var (
 	wtfplSurname = wtfpl.Arg("surname", "Surname of license holder.").Required().String()
 	boml         = app.Command("boml", "Create Blue Oak Model license.")
 )
+
+func readInJSON(file string) map[string]interface{} {
+	jsonFile, err := os.Open(file)
+	if err != nil {
+		fmt.Println(err)
+	}
+	defer jsonFile.Close()
+	byteValue, _ := ioutil.ReadAll(jsonFile)
+
+	var result map[string]interface{}
+	if err := json.Unmarshal(byteValue, &result); err != nil {
+		panic(err)
+	}
+
+	return result
+}
+
+func replaceText(file string, text1 string, text2 string) error {
+	read, err := ioutil.ReadFile(file)
+	newContents := strings.Replace(string(read), text1, text2, -1)
+	err = ioutil.WriteFile(file, []byte(newContents), 0)
+	if err != nil {
+		panic(err)
+	}
+	return nil
+}
+
+func createLicense(licenseName string, fileName string, name string, surname string) error {
+	dir, err := os.Getwd()
+	if err != nil {
+		log.Fatal(err)
+	}
+	licenseFile := dir + "/licenses/" + licenseName + "/" + fileName
+	cmd := exec.Command("cp", licenseFile, dir)
+	cmd.Stdout = os.Stdout
+	if err = cmd.Run(); err != nil {
+		if fileName == "LICENSE" {
+			fmt.Println("This license hasn't been added yet.\nYou can add it via a pull request!")
+		}
+		if fileName == "LICENSE.md" {
+			fmt.Println("The markdown version of this license hasn't been added yet.\nYou can add it via a pull request!")
+		}
+		log.Fatal(err)
+	}
+	placeholders := readInJSON(dir + "/placeholders.json")
+	license := placeholders[licenseName].(map[string]interface{})
+	year, _, _ := time.Now().Date()
+	for key, value := range license {
+		text := value.(string)
+		if text != "" {
+			if string(key) == "name" {
+				replaceText(dir+"/"+fileName, text, name+" "+surname)
+			}
+			if string(key) == "year" {
+				replaceText(dir+"/"+fileName, text, strconv.Itoa(year))
+			}
+		}
+	}
+	fmt.Println("License was created")
+	return nil
+}
 
 func main() {
 	kingpin.MustParse(app.Parse(os.Args[1:]))
@@ -74,27 +140,27 @@ func main() {
 	switch kingpin.MustParse(app.Parse(os.Args[1:])) {
 	case mit.FullCommand():
 		if string(*mitWebsite) == "" {
-			mitCreate(string(*mitName), string(*mitSurname), fileName)
+			createLicense("mit", fileName, string(*mitName), string(*mitSurname))
 		} else {
 			mitCreateWithSite(string(*mitName), string(*mitSurname), string(*mitWebsite), fileName)
 		}
 	case bsd2.FullCommand():
-		bsd2Create(string(*bsd2Name), string(*bsd2Surname), fileName)
+		createLicense("bsd2", fileName, string(*bsd2Name), string(*bsd2Surname))
 	case bsd3.FullCommand():
-		bsd3Create(string(*bsd3Name), string(*bsd3Surname), fileName)
+		createLicense("bsd3", fileName, string(*bsd3Name), string(*bsd3Surname))
 	case cc0.FullCommand():
-		cc0Create(fileName)
+		createLicense("cc0", fileName, "", "")
 	case unlicense.FullCommand():
-		unlicenseCreate(fileName)
+		createLicense("unlicense", fileName, "", "")
 	case gpl2.FullCommand():
-		gpl2Create(fileName)
+		createLicense("gpl2", fileName, "", "")
 	case gpl3.FullCommand():
-		gpl3Create(fileName)
+		createLicense("gpl3", fileName, "", "")
 	case isc.FullCommand():
-		iscCreate(string(*iscName), string(*iscSurname), fileName)
+		createLicense("isc", fileName, string(*iscName), string(*iscSurname))
 	case wtfpl.FullCommand():
-		wtfplCreate(string(*wtfplName), string(*wtfplSurname), fileName)
+		createLicense("wtfpl", fileName, string(*wtfplName), string(*wtfplSurname))
 	case boml.FullCommand():
-		bomlCreate(fileName, bool(*md))
+		createLicense("boml", fileName, "", "")
 	}
 }

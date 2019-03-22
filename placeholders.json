@@ -1,0 +1,42 @@
+{
+	"mit": {
+		"name": "<fullname>",
+		"year": "<year>"
+	},
+	"unlicense": {
+		"name": "",
+		"year": ""
+	},
+	"bsd2": {
+		"name": "[fullname]",
+		"year": "[year]"
+	},
+	"bsd3": {
+		"name": "[fullname]",
+		"year": "[year]"
+	},
+	"boml": {
+		"name": "",
+		"year": ""
+	},
+	"isc": {
+		"name": "<fullname>",
+		"year": "<year>"
+	},
+	"wtfpl": {
+		"name": "<fullname>",
+		"year": "<year>"
+	},
+	"cc0": {
+		"name": "",
+		"year": ""
+	},
+	"gpl2": {
+		"name": "",
+		"year": ""
+	},
+	"gpl3": {
+		"name": "",
+		"year": ""
+	}
+}
