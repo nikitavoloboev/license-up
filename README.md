@@ -1,4 +1,4 @@
-# License Up [![Thanks](http://bit.ly/saythankss)](https://patreon.com/nikitavoloboev)
+# License Up [![Thanks](http://bit.ly/saythankss)](https://github.com/users/nikitavoloboev/sponsorship)
 
 > Create a license quickly
 
@@ -1678,6 +1678,6 @@ See [contribution guidelines](CONTRIBUTING.md#readme).
 
 ## Thank you
 
-You can support me on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
+You can support me on [GitHub](https://github.com/users/nikitavoloboev/sponsorship) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
 
 [![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](LICENSE) [![Twitter](http://bit.ly/nikitweet)](https://twitter.com/nikitavoloboev)
