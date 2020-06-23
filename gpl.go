@@ -15,7 +15,7 @@ func gpl2Create(fileName string) error {
 	}
 	defer fo.Close()
 
-	GPL2 := "                    GNU GENERAL PUBLIC LICENSE\n" +
+	GPL2 := "                    GNU GENERAL PUBLIC license\n" +
 		"                       Version 2, June 1991\n\n" +
 		" Copyright (C) 1989, 1991 Free Software Foundation, Inc.,\n" +
 		" 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA\n" +
@@ -62,7 +62,7 @@ func gpl2Create(fileName string) error {
 		"patent must be licensed for everyone's free use or not licensed at all.\n\n" +
 		"  The precise terms and conditions for copying, distribution and\n" +
 		"modification follow.\n\n" +
-		"                    GNU GENERAL PUBLIC LICENSE\n" +
+		"                    GNU GENERAL PUBLIC license\n" +
 		"   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n" +
 		"  0. This License applies to any program or other work which contains\n" +
 		"a notice placed by the copyright holder saying it may be distributed\n" +
@@ -233,7 +233,7 @@ func gpl2Create(fileName string) error {
 		"of preserving the free status of all derivatives of our free software and\n" +
 		"of promoting the sharing and reuse of software generally.\n\n" +
 		"                            NO WARRANTY\n\n" +
-		"  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY\n" +
+		"  11. BECAUSE THE PROGRAM IS licenseD FREE OF CHARGE, THERE IS NO WARRANTY\n" +
 		"FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN\n" +
 		"OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\n" +
 		"PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED\n" +
@@ -310,7 +310,7 @@ func gpl3Create(fileName string) error {
 	}
 	defer fo.Close()
 
-	GPL3 := "                    GNU GENERAL PUBLIC LICENSE\n" +
+	GPL3 := "                    GNU GENERAL PUBLIC license\n" +
 		"                       Version 3, 29 June 2007\n\n" +
 		" Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>\n" +
 		" Everyone is permitted to copy and distribute verbatim copies\n" +

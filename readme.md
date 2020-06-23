@@ -2,8 +2,6 @@
 
 > Create a license quickly
 
-##### Contents
-
 - [Install](#install)
 - [Usage](#usage)
   - [MIT License](#mit-license)
@@ -28,9 +26,9 @@ go get -u github.com/nikitavoloboev/license-up
 
 ## Usage
 
-Use it in the directory where you want to create the `LICENSE` file.
+Use it in the directory where you want to create the `license` file.
 
-Note that you can also create a `LICENSE.md` file instead by passing in a `--md` flag.
+Note that you can also create a `license.md` file instead by passing in a `--md` flag.
 
 ### MIT License
 
@@ -46,7 +44,7 @@ Where `<website>` is optional. Here is a working example of it.
 license-up mit Nikita Voloboev nikitavoloboev.xyz
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
@@ -100,7 +98,7 @@ Here is a working example of it.
 license-up bsd2 Nikita Voloboev
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
@@ -156,7 +154,7 @@ Here is a working example of it.
 license-up bsd3 Nikita Voloboev
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
@@ -222,7 +220,7 @@ Here is a working example of it.
 license-up cc0
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
@@ -369,7 +367,7 @@ Here is a working example of it.
 license-up unlicense
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
@@ -426,12 +424,12 @@ Here is a working example of it.
 license-up gpl2
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
 ```Markdown
-                    GNU GENERAL PUBLIC LICENSE
+                    GNU GENERAL PUBLIC license
                        Version 2, June 1991
 
  Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
@@ -489,7 +487,7 @@ patent must be licensed for everyone's free use or not licensed at all.
   The precise terms and conditions for copying, distribution and
 modification follow.
 
-                    GNU GENERAL PUBLIC LICENSE
+                    GNU GENERAL PUBLIC license
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
   0. This License applies to any program or other work which contains
@@ -690,7 +688,7 @@ of promoting the sharing and reuse of software generally.
 
                             NO WARRANTY
 
-  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+  11. BECAUSE THE PROGRAM IS licenseD FREE OF CHARGE, THERE IS NO WARRANTY
 FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
 OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
 PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
@@ -796,12 +794,12 @@ Here is a working example of it.
 license-up gpl3
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
 ```Markdown
-                    GNU GENERAL PUBLIC LICENSE
+                    GNU GENERAL PUBLIC license
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
@@ -1507,7 +1505,7 @@ Here is a working example of it.
 license-up isc Nikita Voloboev
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
@@ -1551,12 +1549,12 @@ Here is a working example of it.
 license-up wtfpl Nikita Voloboev
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
 ```Markdown
-        DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+        DO WHAT THE FUCK YOU WANT TO PUBLIC license
                     Version 2, December 2004
 
 Copyright (c) 2019-present, Nikita Voloboev
@@ -1565,7 +1563,7 @@ Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document, and changing it is allowed as long
 as the name is changed.
 
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+            DO WHAT THE FUCK YOU WANT TO PUBLIC license
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
 0. You just DO WHAT THE FUCK YOU WANT TO.
@@ -1595,7 +1593,7 @@ Here is a working example of it.
 license-up boml
 ```
 
-Will create a file `LICENSE` with following content:
+Will create a file `license` with following content:
 
 <details><summary>Click to show content</summary>
 
@@ -1669,15 +1667,16 @@ alias boml='license-up boml'
 
 ## Contributing
 
-See [contribution guidelines](CONTRIBUTING.md#readme).
+See [contribution guidelines](contributing.md).
 
 ## Related
 
 - [OSS Ninja](https://oss.ninja) - Open Source licenses with just a link.
 - [SPDX License List](https://spdx.org/licenses/) - List of commonly found licenses.
+- [license-generator](https://github.com/azu/license-generator) - Command line tool that generate license file.
 
 ## Thank you
 
 You can support me on [GitHub](https://github.com/users/nikitavoloboev/sponsorship) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
 
-[![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](LICENSE) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
+[![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](license) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)

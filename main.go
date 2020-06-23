@@ -13,7 +13,7 @@ import (
 var (
 	app          = kingpin.New("license-up", "A command-line tool to make licences.").Version("1.0.0")
 	force        = app.Flag("force", "Create a license even if license already exists.").Short('f').Bool()
-	md           = app.Flag("md", "Create a LICENSE.md file instead of a LICENSE file.").Bool()
+	md           = app.Flag("md", "Create a license.md file instead of a license file.").Bool()
 	mit          = app.Command("mit", "Create MIT license.")
 	mitName      = mit.Arg("name", "Name of license holder.").Required().String()
 	mitSurname   = mit.Arg("surname", "Surname of license holder.").Required().String()
@@ -39,10 +39,10 @@ var (
 
 func main() {
 	kingpin.MustParse(app.Parse(os.Args[1:]))
-	// Check to see if the user wants to create a `LICENSE.md` file instead of a `LICENSE` file
-	fileName := "LICENSE"
+	// Check to see if the user wants to create a `license.md` file instead of a `license` file
+	fileName := "license"
 	if bool(*md) == true {
-		fileName = "LICENSE.md"
+		fileName = "license.md"
 	}
 	// Check to see if we are overwriting any existing license files
 	if bool(*force) == false {
