@@ -7,12 +7,10 @@ Thank you for taking the time to contribute! ♥️ You can:
 
 ## Run project
 
-To run the project:
+1. Clone repo
+2. If you use [VSCode](https://code.visualstudio.com) with [Go](https://github.com/microsoft/vscode-go) plugin, it will install all Go dependencies for you in the background when you open the project.
+3. Edit the code & run it with `go run .`.
 
-1. Clone the repo
-2. `go get` dependencies used. I
-3. `go run .` to compile and run.
+I use [watchexec](https://github.com/watchexec/watchexec) to develop.
 
-I like to use [watchexec](https://github.com/watchexec/watchexec) to recompile & run on go file changes. Using this command:
-
-`watchexec --exts go "echo -- && go run ."`
+Running `watchexec --exts go "echo -- && go run ."` will automatically rerun `go run .` for you on every Go file changed.
