@@ -41,7 +41,7 @@ license-up mit <name> <surname> [<website>]
 Where `<website>` is optional. Here is a working example of it.
 
 ```Bash
-license-up mit Nikita Voloboev nikitavoloboev.xyz
+license-up mit Nikita Voloboev nikiv.dev
 ```
 
 Will create a file `license` with following content:
@@ -51,7 +51,7 @@ Will create a file `license` with following content:
 ```Markdown
 MIT License
 
-Copyright (c) 2019-present, Nikita Voloboev (nikitavoloboev.xyz)
+Copyright (c) 2019-present, Nikita Voloboev (nikiv.dev)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -79,7 +79,7 @@ SOFTWARE.
 If you wish, you can create an [alias](http://tldp.org/LDP/abs/html/aliases.html) to simplify this. For example I have this alias that I use:
 
 ```Bash
-alias mit='license-up mit Nikita Voloboev nikitavoloboev.xyz'
+alias mit='license-up mit Nikita Voloboev nikiv.dev'
 ```
 
 ### BSD License
@@ -1677,6 +1677,6 @@ See [contribution guidelines](contributing.md).
 
 ## Thank you
 
-You can support me on [GitHub](https://github.com/users/nikitavoloboev/sponsorship) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
+You can support me on [GitHub](https://github.com/users/nikitavoloboev/sponsorship) or look into [other projects](https://nikiv.dev/projects) I shared.
 
-[![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](license) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
+[![CC4](https://img.shields.io/badge/license-CC4-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://creativecommons.org/licenses/by/4.0/) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
