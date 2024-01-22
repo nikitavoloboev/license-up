@@ -1,4 +1,4 @@
-# License Up [![Thanks](http://bit.ly/saythankss)](https://github.com/users/nikitavoloboev/sponsorship)
+# License Up
 
 > Create a license quickly
 
@@ -1665,9 +1665,15 @@ As an alias:
 alias boml='license-up boml'
 ```
 
-## Contributing
+## Contribute
 
-See [contribution guidelines](contributing.md).
+The tasks to do are outlined in [existing issues](../../issues) and in [tasks below](#tasks) (sorted by priority).
+
+If issue/idea you have is not there, [open new issue](../../issues/new/choose) or [start discussion](../../discussions).
+
+Any PR with code/doc improvements is welcome. ✨
+
+Join [Discord](https://discord.com/invite/TVafwaD23d) for more indepth discussions on this repo and [others](https://github.com/nikitavoloboev#src).
 
 ## Related
 
@@ -1675,8 +1681,8 @@ See [contribution guidelines](contributing.md).
 - [SPDX License List](https://spdx.org/licenses/) - List of commonly found licenses.
 - [license-generator](https://github.com/azu/license-generator) - Command line tool that generate license file.
 
-## Thank you
+### ♥️
 
-You can support me on [GitHub](https://github.com/users/nikitavoloboev/sponsorship) or look into [other projects](https://nikiv.dev/projects) I shared.
+[Support on GitHub](https://github.com/sponsors/nikitavoloboev) or look into [other projects](https://nikiv.dev/projects).
 
-[![CC4](https://img.shields.io/badge/license-CC4-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://creativecommons.org/licenses/by/4.0/) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
+[![MIT](http://bit.ly/mitbadge)](https://choosealicense.com/licenses/mit/) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
